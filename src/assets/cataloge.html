@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Каталог</title>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="wrapper">    
+    <!-- header start -->
+    <%=require('../templates/header-nav.html') %>
+    <!-- header end -->
+
+    <main class="main page-main">
+        <div class="main__content">
+            <section class="catalog">
+                <h1 class="catalog__title title">Каталог</h1>
+                <div class="catalog__content container">
+                    <!-- price-list download & search form -->
+                    <%=require('../templates/pricedown-and-form.html') %>
+                    <!-- price-list download & search form end-->
+
+                    <!-- navigation cataloge -->
+                    <%=require('../templates/top-navigation.html') %>
+                    <!-- navigation cataloge -->
+
+                    <!-- active branch -->
+                    <div class="catalog__item_bottom item item_red">Редукторы червячные</div>
+                    <!-- active branch -->
+
+                    <!-- category text -->
+                    <div class="catalog__row">
+                        <p>Мы производим высококачественные редукторы червячного типа, предназначенные для преобразования угловой скорости и момента двигателя в приводных механизмах промышленных машин, конвейерных линий и технологического оборудования.</p>
+                        <h2 class="subtitle">Сферы применения и преимущества</h2>
+                        <p>Червячный редуктор применяется в приводных механизмах ворот, конвейеров, промышленных миксеров, подъемников, а также в металлообрабатывающих станках и различных насосах. Ассортимент практичных передаточных механизмов включает в себя изделия, различающиеся по межосевому расстоянию, передаточному числу, габаритным размерам, массе, схеме сборки, варианту крепления, варианту исполнения конца тихоходного вала, а также по климатическому исполнению.</p>
+                        <h2 class="subtitle">Преимущества червячной передачи:</h2>
+                        <ul class="list">
+                            <li>компактные размеры, обеспечивающие удобную компоновку передаточного механизма;</li>
+                            <li>большой потенциал увеличения крутящего момента в сравнении с другими разновидностями зубчатых передач;</li>
+                            <li>относительно небольшой уровень шума при работе механизма;</li>
+                            <li>простота конструктивного исполнения и невысокая стоимость;</li>
+                            <li>плавный ход в сравнении с аналогичными цилиндрическими редукторами;</li>
+                            <li>простота и удобство технического обслуживания;</li>
+                            <li>отсутствие обратимости, исключающее необходимость установки дополнительного тормозного устройства.</li>
+                        </ul>
+                            <p>Относительно невысокие показатели КПД, которыми обладают червячные редукторы, удачно компенсируются индивидуальными преимуществами плавно работающих передаточных механизмов. Для эффективной и безопасной эксплуатации передаточного устройства необходимо соблюдать рекомендованную ориентацию в пространстве, исключающую риск вытекания смазочных материалов.</p>
+                    </div>
+                    <!-- category text end-->
+
+                    <!-- categories + subcategories -->
+                    <div class="catalog__row">
+
+                    <!-- bottom menu - nav -->
+                        <%=require('../templates/accordeon.html') %>  
+                    <!-- bottom menu - nav end -->
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <!-- footer start -->    
+    <%=require('../templates/footer.html') %>  
+    <!-- footer end -->
+
+    <!-- MODAL ORDER -->    
+    <%=require('../templates/modal-order.html') %>
+    <!-- MODAL end -->
+
+
+</div>
+<script src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_sal_js_dist_sal_js-node_modules-2f854f.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

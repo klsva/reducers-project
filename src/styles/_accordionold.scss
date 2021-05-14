@@ -1,0 +1,190 @@
+.b-menu {
+    width: 50%;
+    float: left;
+    margin: 20px 0 198px 0;
+}
+// .category {
+//     &__item { //блок 50% левый
+//         display: block;
+//         position: relative;
+//         margin-bottom: 10px;
+//         cursor: pointer;
+//         &:hover {
+//             border: 1px solid #6D6D6D;
+//             box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+//             border-right: none;
+//             border-radius: 20px 0 0 20px; 
+//             &::after{
+//                 content: "";
+//                 background: #fff;
+//                 position: absolute;
+//                 top: 0;
+//                 right: -2px;
+//                 height: 100%;
+//                 width: 3px;
+//             }
+//         }
+//         &:hover .category__content{
+//             border: none;
+//         }
+//         &:hover > ul {
+//             display: block;
+//             //opacity: 0.8;
+//             opacity: 1;
+//             filter: alpha(opacity = 80);
+//         }
+//         &:nth-child(even) .subcategory{
+//             top: -1px;
+//         }
+//     }
+//     &__content{ //видимые плашки
+//         display: inline-block;
+//         position: relative;
+//         border: 1px solid #6D6D6D;
+//         box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+//         border-radius: 20px;
+//         font-family: $font-family;
+//         padding: 10px 20px;
+//         font-weight: 200;
+//         font-size: 23px;
+//         line-height: 129%;
+//         color: #000000;
+//         &:hover{
+//             border: none;
+//             color: #B92E2E;
+//         }
+//     }
+// }
+
+.category {
+    &__item { //блок 50% левый
+        display: block;
+        position: relative;
+        margin-bottom: 10px;
+        cursor: pointer;
+        // &:hover .category__content{
+        //     border: none;
+        // }
+        &:nth-child(even) .subcategory{
+            top: -1px;
+        }
+    }
+    &__content{ //видимые плашки
+        display: inline-block;
+        position: relative;
+        border: 1px solid #6D6D6D;
+        box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+        border-radius: 20px;
+        font-family: $font-family;
+        padding: 10px 20px;
+        font-weight: 200;
+        font-size: 23px;
+        line-height: 129%;
+        color: #000000;
+        &:hover{
+            //border: none;
+            color: #B92E2E;
+        }
+    }
+}
+.drop-down{ //повесить на ul
+    display: block;
+    //opacity: 0.8;
+    //opacity: 1;
+    //filter: alpha(opacity = 80);
+}
+.drop-down__border { //повесить на category_item
+    border: 1px solid #6D6D6D;
+    box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+    border-right: none;
+    border-radius: 20px 0 0 20px; 
+    &::after{
+        content: "";
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: -2px;
+        height: 100%;
+        width: 3px;
+    }
+}
+
+
+
+
+.subcategory { //скрытое меню
+    position: absolute;
+    top: -1px;
+    left: 100%;
+    width: 100%;
+    // left: 97%;
+    // width: 96%;
+    padding: 25px 0 57px 0;
+    background-color: #fff;
+    border: 1px solid #6D6D6D;
+    box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+    border-radius: 0 20px 20px 20px;
+    display: none; 
+    &__item {
+        //border styles
+        width: 95%;
+        margin: 32px auto 13px auto;
+
+    }
+}
+.item-subcategory {
+    font-family: $font-family;
+    border-bottom: 1px solid #6D6D6D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    position: relative;
+    // .item__title
+    &__title-group{
+    }
+    &__title {
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 129%;
+        color: #000000;
+    }
+
+    // .item__link
+    &__link {        
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 129%;
+        text-decoration-line: underline;
+        color: #6D6D6D;
+    }
+
+    // .item__price
+    &__price {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 129%;
+        color: #000000;
+    }
+}
+
+
+
+.btn {
+
+    // .btn_white
+    &_white {
+        color: #B92E2E;
+        font-family: $font-family;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 20px;
+        background: #FFFFFF;
+        border: 1px solid #B92E2E;
+        box-shadow: 0px 4px 4px rgba(186, 186, 186, 0.25);
+        border-radius: 40px;
+    }
+}

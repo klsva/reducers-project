@@ -1,0 +1,199 @@
+.header{
+    position:fixed;
+    width: 100vw;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:100vw;
+        height:auto;
+        margin: 0 auto;
+        }  
+    @media (max-width:1130px){
+        &__content{
+        padding-top: 8px;
+        }
+    }
+}
+.logo {
+    font-family: $font-headers;
+    font-size: 48px;
+    line-height: 36px;
+    color: #B92E2E;
+    text-shadow: 0px 4px 8px rgba(185, 46, 46, 0.2);
+    a {
+        color: #B92E2E;
+    }
+    span{
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+    }
+
+    @media (max-width:480px){
+        font-size: 36px;
+        line-height: 26px;
+        span{
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+.navigation {
+
+    // .navigation__menu
+    &__menu {
+        flex: 0 1 58.715%;
+    }
+    @media (max-width:1370px) {
+        &__menu {
+            flex: 0 1 67.715%;
+        }
+    }
+
+}
+.menu {
+
+    // .menu__icon
+    &__icon {
+    }
+
+    // .menu__body
+    &__body {
+        margin: 47px 0;
+    }
+
+    // .menu__list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .menu__link
+    &__link {
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        &:hover:not(.btn_red), &:focus:not(.btn_red) {
+            padding-bottom: 5px;
+            border-bottom:  1px solid #B92E2E;
+        }
+        &.color_white{
+            color: #fff;
+            
+        }
+        &.last{
+            margin-left: -41px;
+        }
+        &.for-bottom{
+            display: none;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding:0;    
+        }
+
+    }
+
+    /*FOR BURGER*/
+    @media (max-width: 1130px) { //for burger
+        &__body {
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            background-color: #fff;
+            padding: 48px 0 0 0;
+            transform: translate3d(0, -100%, 0);
+            transition: all 0.3s ease 0s;
+            &.active{
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        &__list {
+            display: block;
+            position:relative;
+            height: 100%;
+            width:100%;
+            li {
+                display: block;
+                padding: 0 0 32px 8px;
+                border-left: 0px solid #dc466c;
+            }
+            li:last-child{
+                position:absolute;
+                bottom:0; 
+                padding: 0;
+                margin: 0 auto;
+                width:100%;
+                text-align: center;
+                    .btn_red{
+                        width: 100%;
+                        background: radial-gradient(50% 50% at 50% 50%, rgba(221, 158, 158, 0) 0%, #B92E2E 100%), #B92E2E;
+                        border: 1px solid #B92E2E;
+                        box-sizing: border-box;
+                        box-shadow: 0px 8px 16px rgba(86, 18, 18, 0.3);
+                        border-radius: 40px 40px 0px 0px;
+                        padding: 14px auto;
+                    }
+                    .last{
+                        margin: 0;
+                    }
+                    a{
+                        display: block;
+                    }
+            }
+        }
+        &__link {
+            color: #603e4e;
+            font-size: 20px;
+        }
+    }
+}
+.icon-menu {
+    @media (max-width:1130px) { //for burger
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 8px;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 25;
+        span {
+            transition: all 0.3s, ease 0s;
+            top: 8px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #B92E2E;;
+            &:first-child {
+                top: 0;
+            }
+            &:last-child {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        &.active {
+            span {
+                background-color:  #603e4e;
+                transform: scale(0);
+                &:first-child {
+                    transform:rotate(-45deg);
+                    top: 8px;
+                }
+                &:last-child {
+                    transform:rotate(45deg);
+                    bottom: 8px;
+                }
+            }
+        }
+    }
+}

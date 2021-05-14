@@ -1,0 +1,55 @@
+<div id="order-modal" class="order__modal">
+    <div class="order__body">
+        <div class="order__close_link close">
+            <span></span>
+            <span></span>
+        </div>
+        <!-- form for order start-->
+        <div class="form">
+            <form action="#" id="order-form" class="form__body">
+                
+                <div class="form__item">
+                    <label for="formName" class="form__label">ФИО</label>
+                    <input id="formName" type="text" name="name" class="form__input _req" placeholder="Константин Константинович Константиновский">
+                </div>
+
+                <div class="form__item">
+                    <label for="formPhone" class="form__label">Телефон</label>
+                    <input id="formPhone" type="text" name="phone" class="form__input _req _phone" placeholder="+7 (000) 000 - 00 - 00">
+                </div>
+
+                <div class="form__item">
+                    <label for="formEmail" class="form__label">E-mail</label>
+                    <input id="formEmail" type="text" name="email" class="form__input _req _email" placeholder="info@info.ru">
+                </div>
+
+                <div class="form__item">
+                    <label for="formRegion" class="form__label">Регион</label>
+                    <input id="formRegion" type="text" name="rigion" class="form__input" placeholder="Северо-Западный">
+                </div>
+
+                <div class="form__item">
+                    <label for="formCity" class="form__label">Город</label>
+                    <input id="formCity" type="text" name="city" class="form__input" placeholder="Санкт-Петербург">
+                </div>
+
+                <div class="form__item">
+                    <label for="formMessage" class="form__label">Ваш заказ</label>
+                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                </div>            
+        
+                <button type="submit" class="form__button btn_red order-reply">Отправить</button>
+            </form>
+            <!-- form for order end-->
+        </div>	
+    </div>
+</div>
+<!-- MODAL REPLY -->
+<div id="thanks-for-order__modal" class="thanks-for-order__modal">
+    <div class="thanks-for-order__body">
+        <div class="reply">
+            Ваш заказ принят! <br> Наш менеджер свяжется с Вами в ближайшее время.
+        </div>
+        <div class="thanks-for-order__close_link btn_white"><a href="#!"> Вернуться к каталогу</a></div>
+    </div>
+</div>

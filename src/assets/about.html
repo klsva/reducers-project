@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>О компании</title>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="wrapper">
+    <div class="for-bottom "><a href="#!" class="btn_red popup-order btn_red_bottom">Сделать заказ</a></div>                                 
+
+    <!-- header start -->
+    <%=require('../templates/header-nav.html') %>
+    <!-- header end -->
+
+    <main class="main page-main">
+        <div class="main__content">
+            <section class="about"> 
+                <h1 class="about__title title">О компании</h1>
+                <div class="about__content container">
+                    <div class="about__row clearfix">
+                    <div class="about__image"><img src="./img/about/reducer01.jpg" alt=""></div>
+                    <p>Основным направлением деятельности Петербургского редукторного завода являются производство и реализация продукции: </p>
+                    <ul class="list list_about">
+                        <li>редукторы червячные;</li>
+                        <li>цилиндрические редукторы;</li>
+                        <li>планетарные редукторы;</li>
+                        <li>конические редукторы;</li>
+                        <li>мотор-редукторы.</li>
+                    </ul>
+                    <p>Главным преимуществом Петербургского редукторного завода, прежде всего, являются цена и сроки. Компания обладает большим товарным запасом комплектующих, что позволяет быстро изготовить любой редуктор (и стандартный, и нестандартный).</p>
+                    <p>Все редукторы, выпускаемые предприятием, в обязательном порядке проходят технический контроль на соответствие утвержденным техническим условиям, действующим стандартам и нормативам. </p>
+                    </div>
+                    <div class="about__advantages">
+                    <div class="about__block-adv block-adv">
+                        <div class="block-adv__img"><img src="./img/about/factory.svg" alt=""></div>
+                        <div class="block-adv__text">Собственное производство</div>
+                    </div>
+                    <div class="about__block-adv block-adv">
+                        <div class="block-adv__img"><img src="./img/about/guarantee.svg" alt=""></div>
+                        <div class="block-adv__text">20 лет качества</div>
+                    </div>
+                    <div class="about__block-adv block-adv">
+                        <div class="block-adv__img"><img src="./img/about/russia-map.svg" alt=""></div>
+                        <div class="block-adv__text">Доставка по РФ и странам СНГ</div>
+                    </div>
+                    </div>
+                    <div class="about__text">
+                    <p>Гарантийные обязательства на продукцию Петербургского редукторного завода, устанавливаются в полном соответствии с действующим законодательством РФ и техническими условиями.</p>
+                    <p>Репутация компании Петербургского редукторного завода, перед клиентом – это качество её продукции.</p>
+                    <p>Персонал – это гордящиеся своей принадлежностью к предприятию люди, обладающие максимальной профессиональной компетентностью в своем виде деятельности, созидательные, ориентированные на результат.</p>
+                    <p>
+                        Специалисты предприятия всегда готовы представить заказчику любую информацию о предлагаемой продукции, помочь в выборе.<br>Индивидуальный подход к решаемым задачам.</p>
+                    <p>Руководство компании мгновенно реагирует действием или решением на значимые для предприятия изменения ситуации. Создана максимально гибкая структура производства, которая концентрирует все усилия на достижение цели. Обязательства по отношению к своему персоналу и к контрагентам выполняются безукоризненно</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+        <!-- footer start -->    
+        <%=require('../templates/footer.html') %>  
+        <!-- footer end -->
+
+        <!-- MODAL ORDER -->    
+        <%=require('../templates/modal-order.html') %>
+        <!-- MODAL end -->
+    </div>
+
+</div>
+<script src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_sal_js_dist_sal_js-node_modules-2f854f.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

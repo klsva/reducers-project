@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Контакты</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+</head>
+  <body>
+    <div class="wrapper">
+      <!-- header start-->
+      <%=require('../templates/header-nav.html') %>
+      <!-- header end-->
+      <main class="main page-main">
+        <div class="main__content">
+          <section class="contacts">
+            <h1 class="contacts__title title">Контакты</h1>
+            <div class="contacts__content container">
+              <div class="contacts__row">
+                <div class="contacts__block">
+                  <p><span>Адрес:</span>  192102, Санкт-Петербург, Средняя ул., д.6</p>
+                  <p><span>Телефон:</span>  +7(812) 490-56-32</p>
+                  <p><span>Телефон:</span>  +7 911 123-60-60</p>
+                  <p><span>Факс:</span>  +7(812) 490-54-16</p>
+                  <p><span>E-mail:</span>  info@td-red.ru</p>
+                </div>
+                <div class="contacts__map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29b49d260ebcb6cf88334a37a1b5d6034082fe7b14a22953f24cef6b1230f692&amp;source=constructor" width="100%" height="326" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="contacts__subtitle sub-title">Обратная связь</div>
+              <div class="contacts__text">
+                <p>Здесь Вы можете задать вопрос по продукции или работе завода, оставить отзыв или предложение о сотрудничестве.</p>
+              </div>
+              <!-- form for order-->
+              <div class="contacts__form">
+                <div class="form">
+                  <form class="form__body" id="form" action="#">
+                    <div class="form__item">
+                      <label class="form__label" for="formName">Имя</label>
+                      <input class="form__input _req" id="formName" type="text" name="name">
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label" for="formPhone">Телефон</label>
+                      <input class="form__input _req" id="formPhone" type="text" name="name">
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label" for="formEmail">E-mail</label>
+                      <input class="form__input _req _email" id="formEmail" type="text" name="email">
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label" for="formMessage">Сообщение</label>
+                      <textarea class="form__input" id="formMessage" name="message"></textarea>
+                    </div>
+                    <button class="form__button btn_red popup-reply" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+        <!-- footer start -->    
+        <%=require('../templates/footer.html') %>  
+        <!-- footer end -->
+
+        <!-- MODAL ORDER -->    
+        <%=require('../templates/modal-order.html') %>
+        <!-- MODAL end -->
+    </div>
+    <script src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_sal_js_dist_sal_js-node_modules-2f854f.js"></script>
+    <script src="main.js"></script>
+  </body> 
+</html>
